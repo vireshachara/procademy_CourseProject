@@ -1,0 +1,28 @@
+<div class="one1">
+    <app-search (serachTextChanged)="searchInput($event)"></app-search>
+    <app-filter [All]="allProductSelected()" [Free]="freeCoursesSelected()" [premium]="premiumCoursesSelected()"
+        (filterRadioButtonSelectionChanged)="onSelectionRadioButtonChanged($event)"></app-filter>
+    <ng-container *ngFor="let courses of courses">
+        <div class="course-container"
+            *ngIf="searchInputEnterdValue === '' || courses.name.toLowerCase().includes(searchInputEnterdValue)">
+            <div class="course_card"
+                *ngIf="SelectionRadioButtonChanged === 'All' || SelectionRadioButtonChanged === courses.type">
+                <div>
+                    <img [src]="courses.image" alt="Image not available">
+                </div>
+                <div>
+                    <h3 class="course-name">{{courses.name}}</h3>
+                </div>
+                <div class="course-descreption">{{courses.descreption.slice(0,111)}}....</div>
+                <div class="course-details">
+                    <div class="course-type"><b>{{courses.type}}</b></div>
+                    <div class="course-price"> <b>Price :{{courses.Price}}</b></div>
+                </div>
+                <div class="course-buttons">
+                    <button class="btn btn-buy">Buy Now</button><br>
+                    <button class="btn btn-show" routerLink="/courses/course/{{courses.id}}">Show Details</button>
+                </div>
+            </div>
+        </div>
+    </ng-container>
+</div>

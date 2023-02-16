@@ -1,0 +1,21 @@
+.main {
+    /* padding: 15px; */
+    padding: 20px 0px;
+    margin: 0px;
+    background-color: rgb(95, 91, 91);
+    color: white;
+    border-bottom: rgb(237, 236, 236) 1px solid;
+}
+.heading {
+    padding: 21px;
+}
+.heading:hover {
+    background-color: rgb(67, 67, 67);
+    color: rgb(243, 235, 7);
+    padding-bottom: 22px;
+    padding-top: 22px;
+    cursor: pointer;
+}
+.active {
+    background-color: rgb(67, 67, 67);
+}

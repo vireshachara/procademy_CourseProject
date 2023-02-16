@@ -1,0 +1,28 @@
+.container {
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    /* justify-content: center; */
+    margin: 0 auto;
+}
+img {
+    margin: 30px;
+}
+.detail {
+    margin-top: 30px;
+}
+.course-name {
+    color: blue;
+    font-size: 30px;
+    font-weight: bold;
+}
+.course-descreption {
+    margin-bottom: 10px;
+}
+.btn-buy {
+    width: 120px;
+    background-color: orange;
+    border: none;
+    padding: 4px;
+    margin-top: 20px;
+}

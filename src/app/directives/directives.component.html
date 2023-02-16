@@ -1,0 +1,18 @@
+<div class="container">
+
+    <div> <marquee behavior="scroll" direction="unidirectional">Scroll - Unidirectional</marquee></div>
+
+    <div> <marquee behavior="alternate" direction="bidirectional">Scroll - Bi-directional</marquee></div>
+
+    <div appBackground >This is the custom directive</div>
+
+    <div appHighlight>This is the Rendered2 Directive </div>
+
+    <div appHighlight appHover>This is the @HoistListener Directive </div>
+
+    <div class="container" appBetterhighlight>This is the @Hoisbinding Directive </div>
+
+    <div class="container" appCustompropertybinding [defaultColor]="'yellow'" [highlightColor]="'red'" 
+        [title]="'This is the title of body'">This is the Custom proprty binding Directive </div>
+
+</div> 

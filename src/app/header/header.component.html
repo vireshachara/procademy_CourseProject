@@ -1,0 +1,13 @@
+ <div class="main">
+   <span>
+      <span class="heading" routerLink="/home" [routerLinkActive]="'active'">Home</span>
+      <span class="heading" routerLink="/courses" routerLinkActive="active">Courses</span>
+      <span class="heading" routerLink="/forms" routerLinkActive="active">Form</span>
+      <span class="heading" routerLink="/directives" routerLinkActive="active">Custom Directives</span>
+   </span>
+   <span style="float: right">
+      <span class="heading" routerLink="/login" routerLinkActive="active">Login</span>
+      <span class="heading" routerLink="/logout" routerLinkActive="active">Logout</span>
+   </span>
+</div>
+<router-outlet></router-outlet>
